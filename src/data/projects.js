@@ -1,0 +1,73 @@
+export const projects = [
+  {
+    id: 1,
+    title: 'VolunteerHub',
+    category: 'Web Development',
+    desc: 'VolunteerHub is a full-stack web platform connecting volunteers with organizations through features like secure authentication, smart matching, and community dashboards.',
+    fullDesc: 'VolunteerHub is a full-stack web platform connecting volunteers with organizations through features like secure authentication with role-based access, smart opportunity matching, community groups, volunteer dashboards, event calendars, resource center, in-app messaging, waitlist management, and admin controls. Built using React, Vite, Node.js, Express.js, Supabase (PostgreSQL), JWT, and modern UI tools, ensuring scalability, security, and responsive performance.',
+    tech: ['React', 'Node.js', 'Express.js', 'Supabase', 'PostgreSQL', 'JWT'],
+    hashtags: ['#React', '#Node.js', '#Supabase', '#Express'],
+    image: '/volunteer1.png',
+    images: ['/volunteer1.png', '/volunteer2.png'],
+    deployedLink: 'https://69a32ab59403c08817198e10--thunderous-tiramisu-1b843d.netlify.app/',
+    githubFront: 'https://github.com/SeshaSai07/Volunteer-Opportunity-Frontend',
+    githubBack: 'https://github.com/SeshaSai07/Volunteer-Opportunity-Hub-Backend'
+  },
+  {
+    id: 2,
+    title: 'AI-Powered Daily Time Tracking & Analytics Dashboard',
+    category: 'AI / Data Science',
+    desc: 'AI-Powered Daily Time Tracking & Analytics Dashboard is a responsive web application that enables smart time tracking with 24-hour validation, real-time analytics, and secure authentication.',
+    fullDesc: 'AI-Powered Daily Time Tracking & Analytics Dashboard is a responsive web application that enables smart time tracking with 24-hour validation, real-time analytics using pie and bar charts, full-day insights, gratitude journaling, dark/light mode, and secure authentication. Built using React (Vite), Tailwind CSS, Firebase Auth, Cloud Firestore, Recharts, and React Router for scalable and interactive performance.',
+    tech: ['React', 'Vite', 'Tailwind CSS', 'Firebase', 'Recharts', 'React Router'],
+    hashtags: ['#React', '#TailwindCSS', '#Firebase', '#Recharts'],
+    image: '/timetrack1.png',
+    images: ['/timetrack1.png', '/timetrack2.png'],
+    deployedLink: 'https://ai-powered-time-tracking-app.web.app/',
+    githubFront: 'https://github.com/SeshaSai07/AI-Time-Analytics-Dashboard',
+    githubBack: '#'
+  },
+  {
+    id: 3,
+    title: 'Job Fraud Detection System',
+    category: 'AI / Security',
+    desc: 'Job Fraud Detection System is a machine learning-based application that analyzes job descriptions for fraud indicators and evaluates URL legitimacy using KNN.',
+    fullDesc: 'Job Fraud Detection System is a machine learning-based application that analyzes job descriptions for fraud indicators like vague content and unrealistic salaries, and evaluates URL legitimacy using KNN. It delivers clear verdicts to detect scams. Built using Python, Scikit-learn, and machine learning models for reliable classification.',
+    tech: ['Python', 'Scikit-learn', 'Machine Learning', 'KNN'],
+    hashtags: ['#Python', '#MachineLearning', '#KNN', '#Security'],
+    image: '/fraud1.png',
+    images: ['/fraud1.png', '/fraud2.png'],
+    deployedLink: '#',
+    githubFront: 'https://github.com/SeshaSai07/AI_Guard',
+    githubBack: '#'
+  },
+  {
+    id: 4,
+    title: 'Solar-Powered Smart Cooling Cap',
+    category: 'IoT / Hardware',
+    desc: 'Solar-powered cooling cap that converts heat exposure into a cooling effect using DHT-11 sensors and Peltier modules.',
+    fullDesc: 'Designed a solar-powered cooling cap that converts heat exposure into a cooling effect, enhancing comfort for outdoor workers. Integrated a mini solar panel with a DHT-11 sensor to detect ambient heat and activate the cooling system. Configured a Peltier module and rechargeable lithium battery to regulate cooling based on temperature thresholds. Programmed an Arduino microcontroller to manage operations while a heat sink dissipated excess heat for efficiency.',
+    tech: ['Arduino', 'IoT', 'Peltier Module', 'Solar Energy', 'DHT-11'],
+    hashtags: ['#Arduino', '#IoT', '#SolarPower', '#Hardware'],
+    image: '/smartcap1.png',
+    images: ['/smartcap1.png', '/project5.png'],
+    deployedLink: '#',
+    githubFront: '#',
+    githubBack: '#'
+  },
+  {
+    id: 5,
+    title: 'Chat application',
+    category: 'Java / Full Stack',
+    desc: 'Real-Time Chat Application is a one-to-one messaging platform featuring instant communication via WebSocket and secure authentication.',
+    fullDesc: 'Real-Time Chat Application is a one-to-one messaging platform featuring instant communication via WebSocket, secure login/registration, real-time notifications, persistent chat history, responsive UI, and integrated social links. Built using Java 17, Spring Boot, Spring Security, MySQL, WebSocket (STOMP), Thymeleaf, Bootstrap, Lombok, and Maven for scalable and secure performance.',
+    tech: ['Java 17', 'Spring Boot', 'Spring Security', 'MySQL', 'WebSocket', 'Thymeleaf', 'Bootstrap', 'Maven'],
+    hashtags: ['#Java', '#SpringBoot', '#WebSocket', '#FullStack'],
+    image: '/chat1.png',
+    images: ['/chat1.png', '/chat2.png', '/certificates/wipro_java_cert.jpg'],
+    credentialFile: '/certificates/wipro_java_cert.pdf',
+    deployedLink: '#',
+    githubFront: 'https://github.com/SeshaSai07/Java-full-stack-project-chat-application',
+    githubBack: '#'
+  }
+];

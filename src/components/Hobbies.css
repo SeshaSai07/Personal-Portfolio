@@ -1,0 +1,116 @@
+.hobbies-row {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  justify-content: center;
+}
+
+.hobbies {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.hobbies-bg-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hobbies-bg-elements .glow-orange { top: 10%; right: -5%; opacity: 0.12; }
+.hobbies-bg-elements .glow-pink { top: 40%; left: -10%; opacity: 0.15; }
+.hobbies-bg-elements .glow-indigo { bottom: 0%; right: 10%; opacity: 0.15; }
+
+.hobbies-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.hobby-card-small {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hobby-icon-sm {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.hobby-info-sm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.hobby-tag-sm {
+  font-family: monospace;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.hobby-name-sm {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.2rem;
+}
+
+.hobby-desc-sm {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  margin-bottom: 0;
+  opacity: 0.8;
+}
+
+@media (max-width: 1400px) {
+  .hobby-card-small {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hobbies-row {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+  }
+  
+  .hobby-card-small {
+    width: 100%;
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hobbies-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .hobby-card-small {
+    width: 100%;
+  }
+}

@@ -1,0 +1,6 @@
+/* CSS placeholder for App.css */
+.app {
+    color: white;
+    background: var(--primary-bg);
+    min-height: 100vh;
+}

@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary-bg: #000000;
+  --secondary-bg: #050505;
+  --accent: #38bdf8;
+  --accent-glow: rgba(56, 189, 248, 0.5);
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --glass-bg: rgba(0, 0, 0, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --font-main: 'Inter', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--primary-bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  transition: var(--transition);
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.reveal {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+/* Sunset Aurora Theme Shared Styles */
+.about-glow {
+  position: absolute;
+  filter: blur(120px);
+  opacity: 0.15;
+  border-radius: 50%;
+  animation: pulse-glow 8s ease-in-out infinite alternate;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.glow-orange {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #f97316, transparent 70%);
+}
+
+.glow-pink {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #ec4899, transparent 70%);
+  animation-delay: -2s;
+}
+
+.glow-indigo {
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, #6366f1, transparent 70%);
+  animation-delay: -4s;
+}
+
+@keyframes pulse-glow {
+  from { opacity: 0.12; transform: scale(1); }
+  to { opacity: 0.22; transform: scale(1.1); }
+}
+
+.gradient-text-about {
+  font-weight: 800;
+  background: linear-gradient(90deg, #f97316, #ec4899, #6366f1, #f97316);
+  background-size: 300% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer-text 6s linear infinite;
+}
+
+@keyframes shimmer-text {
+  to { background-position: 300% center; }
+}
+
+.title-underline-glow {
+  width: 80px;
+  height: 5px;
+  background: linear-gradient(90deg, #f97316, #ec4899);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(236, 72, 153, 0.6);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 60px 0;
+  }
+  
+  .gradient-text-about {
+    font-size: clamp(2rem, 8vw, 2.5rem);
+  }
+}
