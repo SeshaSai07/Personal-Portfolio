@@ -24,7 +24,7 @@ const Hero = () => {
           </p>
           
           <div className="hero-ctas">
-            <a href="/resume.pdf" download className="btn btn-primary resume-btn-hero">
+            <a href="/maddineni_lakshmi_sesha_sai_full_stack_resume.pdf" download className="btn btn-primary resume-btn-hero">
               <Download size={18} /> Download Resume
             </a>
             <a href="/#/#projects" className="btn btn-secondary">
