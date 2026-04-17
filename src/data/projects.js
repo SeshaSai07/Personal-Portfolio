@@ -69,5 +69,33 @@ export const projects = [
     deployedLink: '#',
     githubFront: 'https://github.com/SeshaSai07/Java-full-stack-project-chat-application',
     githubBack: '#'
+  },
+  {
+    id: 6,
+    title: 'YouTube Comments Sentiment Analyzer',
+    category: 'Python / AI',
+    desc: 'An AI-powered Flask application that fetches and classifies 10,000+ YouTube comments using Google Gemini API for LLM-driven sentiment analysis, with real-time dashboard and Excel export.',
+    fullDesc: 'Built an AI-powered Flask application that fetches and classifies 10,000+ YouTube comments using the Google Gemini API for LLM-driven sentiment analysis, with a robust keyword-based fallback mechanism to ensure uninterrupted service when API quotas are reached. Achieved 90% sentiment classification accuracy across positive, negative, and neutral categories, and exported structured insights to Excel via openpyxl for client-ready analytics reporting. Designed an interactive analytics dashboard with real-time sentiment filtering, statistical visualization, and a mobile-responsive layout — reducing manual comment analysis time by an estimated 80%.',
+    tech: ['Python', 'Flask', 'Gemini AI', 'YouTube API', 'Pandas', 'Bootstrap 5'],
+    hashtags: ['#Python', '#GeminiAI', '#Flask', '#SentimentAnalysis'],
+    image: '/youtube_analyzer1.png',
+    images: ['/youtube_analyzer1.png'],
+    deployedLink: '#',
+    githubFront: 'https://github.com/SeshaSai07/Youtube-comment-analyzer-project',
+    githubBack: '#'
+  },
+  {
+    id: 7,
+    title: 'AI - Data Cleaning Environment',
+    category: 'AI / Data Engineering',
+    desc: 'An end-to-end AI-powered dataset cleaning tool that transforms unstructured datasets into structured, analysis-ready formats using fine-tuned transformer models.',
+    fullDesc: 'Built an end-to-end AI-powered dataset cleaning tool that transforms unstructured datasets into structured, analysis-ready formats using fine-tuned transformer models. Integrated the Hugging Face Inference API for model inference and applied both Instructional Fine-Tuning and Non-Instructional Fine-Tuning to train domain-adapted cleaning models. Deployed as a public application on Hugging Face Spaces (Clean Gen AI), enabling zero-setup access for end users. Exposed REST API endpoints for programmatic access, allowing seamless downstream integration with data pipelines and automated ETL workflows.',
+    tech: ['Python', 'Hugging Face', 'Transformers', 'REST API', 'Fine-Tuning', 'ETL'],
+    hashtags: ['#AI', '#HuggingFace', '#NLP', '#DataEngineering', '#Python'],
+    image: '/cleangenai1.png',
+    images: ['/cleangenai1.png'],
+    deployedLink: '#',
+    githubFront: 'https://github.com/SeshaSai07/Clean-Gen-AI',
+    githubBack: '#'
   }
 ];
